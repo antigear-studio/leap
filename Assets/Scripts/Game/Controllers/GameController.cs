@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour {
+namespace Leap {
+    /// <summary>
+    /// The topmost controller for the game.
+    /// </summary>
+    public class GameController : MonoBehaviour {
+        /// <summary>
+        /// The overall game model. This class owns it.
+        /// </summary>
+        public GameModel gameModel = new GameModel();
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        /// <summary>
+        /// The character controller.
+        /// </summary>
+        public CharacterController CharacterController;
+
+        void Start() {
+            CharacterController.GameModel = gameModel;
+            gameModel.LeapCount += 10;
+        }
+    }
 }
