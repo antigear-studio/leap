@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Leap {
     /// <summary>
@@ -20,6 +18,21 @@ namespace Leap {
         void Start() {
             CharacterController.GameModel = gameModel;
             gameModel.LeapCount += 10;
+        }
+
+        void Update() {
+            switch (gameModel.GameState) {
+                case GameState.Playing:
+                    CheckLoseCondition();
+                    break;
+            }
+        }
+
+        void CheckLoseCondition() {
+            if (CharacterController.IsDead()) {
+                gameModel.GameState = GameState.Over;
+                Time.timeScale = 0;
+            }
         }
     }
 }
