@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Leap {
+namespace Leap.Game {
     /// <summary>
     /// Describes various states during game play.
     /// </summary>

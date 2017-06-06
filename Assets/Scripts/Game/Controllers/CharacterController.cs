@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Leap {
+namespace Leap.Game {
     /// <summary>
     /// Manages player controls. This reads input from the player.
     /// </summary>

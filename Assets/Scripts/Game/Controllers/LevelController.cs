@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Leap {
+namespace Leap.Game {
     /// <summary>
     /// This is the root class for each level. We use this to adjust where to
     /// position levels after they load.
