@@ -25,7 +25,7 @@ namespace Leap {
 
         void FixedUpdate() {
 		    if (Camera != null && Target != null) {
-                float t = Time.deltaTime * PanSpeed;
+                float t = Time.fixedDeltaTime * PanSpeed;
                 Vector3 pos = Vector2.Lerp(Camera.position, Target.position, t);
                 pos.z = Camera.position.z;
                 Camera.position = pos;

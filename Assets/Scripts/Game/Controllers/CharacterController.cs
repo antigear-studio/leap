@@ -98,5 +98,12 @@ namespace Leap {
 
             CharacterBody.velocity = v;
         }
+
+        /// <summary>
+        /// Determines whether the character fell and is game over.
+        /// </summary>
+        public bool IsDead() {
+            return CharacterBody.transform.position.y < 0;
+        }
     }
 }
