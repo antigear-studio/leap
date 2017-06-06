@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Leap {
+namespace Leap.Game {
     /// <summary>
     /// Controls camera movement. Smoothly pans the camera to the player's
     /// position.

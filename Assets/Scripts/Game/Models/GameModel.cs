@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Leap {
+namespace Leap.Game {
     /// <summary>
     /// Model for a game. Each level will be incrementally loaded into the game,
     /// but they should be the geometry and not affect the model.
