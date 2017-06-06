@@ -1,2 +1,4 @@
-# multijumper
-A mobile game all about jumping at the right moment.
+# leap()
+A game all about jumping at the right moment.
+
+*this game is under development using Unity*
