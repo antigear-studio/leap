@@ -33,5 +33,16 @@ namespace Leap.Game {
             get;
             set;
         }
+
+        // What are platforms?
+        // They give jump counts, well some do anyway. Do they need to be
+        // recorded by the model? Well they are part of the model alright, the
+        // level that is. But do we need to keep track of them HERE? Do we need
+        // to access individual platforms in the game model?
+        // We might! We want to speed up the platform the player is on! But then
+        // we can do that without grabbing everything...HMM...
+
+        // We should have view referring to the model, updating and changing as
+        // we go. 
     }
 }

@@ -20,8 +20,14 @@ namespace Leap.Game {
         /// </summary>
         public CharacterController CharacterController;
 
+        /// <summary>
+        /// The user interface controller.
+        /// </summary>
+        public UIController UIController;
+
         void Start() {
             CharacterController.GameModel = gameModel;
+            UIController.GameModel = gameModel;
 
             // We need to load the appropriate level. This depends whether the
             // user started at a check point.
