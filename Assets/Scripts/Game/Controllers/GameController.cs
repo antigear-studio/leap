@@ -20,13 +20,19 @@ namespace Leap.Game {
         /// </summary>
         public CharacterController CharacterController;
 
+        /// <summary>
+        /// The user interface controller.
+        /// </summary>
+        public UIController UIController;
+
         void Start() {
             CharacterController.GameModel = gameModel;
+            UIController.GameModel = gameModel;
 
             // We need to load the appropriate level. This depends whether the
             // user started at a check point.
             int lv = ZPlayerPrefs.GetInt(ZPlayerPrefKey.LoadingCheckPoint);
-            LoadLevel(lv + 2);
+            LoadLevel(lv + 3);
 
             if (lv == 0) {
                 gameModel.LeapCount = 10;
